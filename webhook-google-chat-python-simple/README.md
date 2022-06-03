@@ -13,4 +13,6 @@ myenv\scripts\deactivate
 
 ## Screenshot
 
-![](image/README/1654291032547.png)
+![](image/README/add_a_new_webhook.png)
+
+![](image/README/invoke_webhook.png)
