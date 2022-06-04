@@ -1,4 +1,5 @@
-//const fetch = require('node-fetch');
+/* using node-fetch */
+/* don't use like this - const fetch = require('node-fetch'); */
 const fetch = (...args) =>
   import('node-fetch').then(({ default: fetch }) => fetch(...args));
 

@@ -1,10 +1,9 @@
+/* using axios({method: 'post', url: url, data: data, options,}) */
 const axios = require('axios');
 
-async function getWebhoolUrl() {
-  return 'https://chat.googleapis.com/v1/spaces/AAAAjlROM8c/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=-fFXFvlid5DR0Jb90uz42nyywWkjzUNRKYlzegUP6Bo%3D';
-}
-
 async function invokeWebhookForGoogleChat() {
+  const url =
+    'https://chat.googleapis.com/v1/spaces/AAAAjlROM8c/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=-fFXFvlid5DR0Jb90uz42nyywWkjzUNRKYlzegUP6Bo%3D';
   const options = {
     'Content-Type': 'application/json',
   };
@@ -12,12 +11,11 @@ async function invokeWebhookForGoogleChat() {
   const bot_message = {
     text: 'Incoming webhook with Python - hello from a Python script!',
   };
-  //const reqBody = JSON.stringify(bot_message);
 
   let res;
   await axios({
     method: 'post',
-    url: getWebhoolUrl(),
+    url: url,
     data: bot_message,
     options,
   })
@@ -29,6 +27,7 @@ async function invokeWebhookForGoogleChat() {
     });
 
   console.log(res);
+  //console.log(res.data);
   return res;
 }
 
