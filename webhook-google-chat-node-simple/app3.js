@@ -1,4 +1,5 @@
 /* using axios.post(url, body, options) */
+/* works when vpn off and proxy off */
 const axios = require('axios');
 
 async function invokeWebhookForGoogleChat() {
@@ -12,8 +13,8 @@ async function invokeWebhookForGoogleChat() {
   };
   try {
     const response = await axios.post(url, body, options);
-    console.log(response);
-    console.log(response.data);
+    // console.log(response);
+    // console.log(response.data);
     return response.data;
   } catch (err) {
     console.log(err);
@@ -22,3 +23,4 @@ async function invokeWebhookForGoogleChat() {
 }
 
 invokeWebhookForGoogleChat();
+7
