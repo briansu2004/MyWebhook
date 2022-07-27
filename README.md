@@ -2,15 +2,17 @@
 
 My Webhook
 
-## cURL + Google Chat
+## cURL + Google Chat webhook
 
 ```bash
 curl -H "Content-Type: application/json" -X POST -d "{\"text\":\"Hello World\"}" -s "https://chat.googleapis.com/v1/spaces/AAAAjlROM8c/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=..."
 ```
 
-## cURL + Slack
+## cURL + Slack webhook
 
-## GitHub + OpenShift
+...
+
+## OpenShift + GitHub webhook
 
 <https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks>
 
