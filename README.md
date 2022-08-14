@@ -2,15 +2,7 @@
 
 My Webhook
 
-## cURL + Google Chat webhook
-
-```bash
-curl -H "Content-Type: application/json" -X POST -d "{\"text\":\"Hello World\"}" -s "https://chat.googleapis.com/v1/spaces/AAAAjlROM8c/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=..."
-```
-
-## cURL + Slack webhook
-
-...
+## Dynatrace webhook
 
 ## OpenShift + GitHub webhook
 
@@ -261,3 +253,13 @@ def notifyBuild(Map attrs) {
   }
 }
 ```
+
+## cURL + Google Chat webhook
+
+```bash
+curl -H "Content-Type: application/json" -X POST -d "{\"text\":\"Hello World\"}" -s "https://chat.googleapis.com/v1/spaces/AAAAjlROM8c/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=..."
+```
+
+## cURL + Slack webhook
+
+...
